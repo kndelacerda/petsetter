@@ -81,7 +81,7 @@ img {
 }
 
 #full-setter-list {
-  width: 390px;
+  width: auto;
   height: 410px;
   overflow-y: scroll;
 }
