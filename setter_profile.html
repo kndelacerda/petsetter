@@ -15,18 +15,35 @@
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="assets/css/style_setpro.css">
+    <link href="assets/css/style_setres.css" rel="stylesheet">
 
     <!-- Link to jQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <!-- Link to Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <!-- Link to Javascript -->
+    <script type="text/javascript" src="assets/javascript/app_select.js"></script>
+
+    <!-- Link to Javascript for the Map-->
+  	<script src="assets/javascript/app.js" type="text/javascript">
+  	</script>
+
+    <!-- Link to Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+
+    <!-- Link to Map -->
+    <script async defer src=
+    "https://maps.googleapis.com/maps/api/js?key=AIzaSyCahyiaZ1qFwC3A4SBXrVp-Gp5bdmN3aEA&callback=initMap">
+    </script>
 
   </head>
 
   <body>
 
     <div class="jumbotron">
-      <a href="index.html"><img id="headpic" src="assets/pictures/BigLogo.JPG"></a>
+      <a href="index.html"><img id="headpic" src="assets/pictures/BigLogo.jpg"></a>
       <!-- <h1 class="text-center"><strong>Pet</strong>Setters</h1> -->
     </div>
 
@@ -53,7 +70,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <!-- <div class="col-lg-4">
                         <div class="panel panel-default">
                           <div class="panel-heading heading-o">
                             <h3 class="panel-title"><strong>Setters</strong>Home</h3>
@@ -64,8 +81,34 @@
                               </div>
                           </div>
                         </div>
+                      </div> -->
+
+
+                      <div class="col-lg-4">
+                        <div class="panel panel-default">
+                          <div class="panel-heading heading-o">
+                            <h3 class="panel-title"><strong>Setters</strong>Home</h3>
+                          </div>
+
+
+                          <div class="panel-body" id="map_panel">
+                            <div id="floating-panel">
+                              <input id="address" type="textbox" value="Houston,TX"> <input id=
+                              "submit" type="button" value="Geocode">
+                            </div>
+
+
+                            <div id="map">
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                      
+
+
+
+
+
+
                       <a href='index.html'><img src="assets/pictures/Back_Blue.png"></a>
 
                       <a href='completion.html'><img src="assets/pictures/Submit.png"></a>
@@ -101,8 +144,6 @@
 
 
 
-    <!-- Link to javascript -->
-    <script type="text/javascript" src="assets/javascript/app_select.js"></script>
 
   </body>
 
