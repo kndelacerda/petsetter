@@ -90,6 +90,7 @@ img#mappic {
     width: 730px;
 }
 
+<<<<<<< HEAD
   #map {
         height: 100%;
       }
@@ -115,6 +116,13 @@ img#mappic {
 #map_panel {
   height:500px;
 }
+=======
+#map {
+  text-align: center;
+}
+
+
+>>>>>>> origin/master
 /*---------------------------------------------------Owner 3-----------------------------*/
 
 
