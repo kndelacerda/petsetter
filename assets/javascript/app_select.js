@@ -56,7 +56,7 @@ dataRef.ref().on("child_added", function(childSnapshot) {
   console.log(childSnapshot.val().joinDate);
 
   // full list of items to the well
-  $("#full-setter-list").html("<div class='well'><img style='float:left; margin-right:20px; object-fit:fill' src='assets/pictures/PetLogo.jpg'/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
+  $("#full-setter-list").html("<div class='well'><img style='float:left; margin-right:20px; object-fit:fill' src='assets/pictures/PetLogo.JPG'/><div class='well-text'><div id='name'><strong>" + childSnapshot.val().name +
     "</strong></div><div id='email'>" + "Distance: " + childSnapshot.val().email +
     " </div><div id='years'>" + "Review: " + childSnapshot.val().years + " years" +
     " </div><div id='bio'>" + "Rate: " + childSnapshot.val().bio + " </div></div></div>");
