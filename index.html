@@ -1,86 +1,38 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Petsetter: Where Jetsetters find their perfect Petsitter!</title>
 
-	<!-- Reset CSS -->
-	<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-	<!-- Bootstrap  -->
-	<link crossorigin="anonymous" href=
-	"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-	integrity=
-	"sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" rel="stylesheet">
-	<!-- Custom CSS -->
-	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-	<!-- Custom Fonts Link (*CDN TBD*)-->
+<html lang="en-us">
 
-	<!-- JQuery Link -->
-	<script src=
-	"https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js" type="text/javascript">
-	</script>
-	<!-- API - Geolocator -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA-OtTDOQ8DvrhHdtBofw6L_hqtFf9l1R8&callback=myMap"></script>
-	<!-- Dog Favicon -->
-	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA////AABppgDGhf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAMzAAAAAAAAADAAAAAAAAIBAQIAAAAAIhEBEiAAAAIiEAASIgAAAiIRERIiAAACIgERAiIAAAIiABAAIgAAAiAQEBAiAAAAAAAQAAAAAAAAIBIAAAAAACIBESIAAAAAABEREAAAD//wAA//8AAP7/AAD8fwAA/H8AAPAfAADgDwAAwAcAAIADAACAAwAAgAMAAIADAACAAwAAAAEAAAABAAAAAQAA" rel="icon" type="image/x-icon" />
-</head>
+  <head>
 
-<body>
-<!-- START SIGN IN/UP FORMS ======================================================= -->
-<!-- Logic Explanation:
-		1. h3 id="signInTitle" and h3 id="signUpTitle" have different IDs to customize the font based on category
-		2. Pet Owners and Pet Boarders will add/retrieve their information based on the emailPetOwner/Boarder and passwordPetOwner/Boarder vars
-		-Kristen D. -->
-	<!-- Sign-in Form: Pet Owner -->
-	<form id="signInPetOwner" name="signInPetOwner-form">
-		<h3 id="signInTitle">Pet Owners: Sign In!</h3>
-		<p id="signIn">Email Address:</p>
-		<label for="signInPetOwner"></label> <input id="emailPetOwner" type="text">
-		<br><br>
-		<p id="signIn">Password:</p>
-		<label for="signInPetOwner"></label> <input id="passwordPetOwner" type="text">
-		<br><br>
-		 <input class="btn btn-default" id="signInButton" type="submit" value="Sign In">
-	</form>
-	<!-- Sign-in Form: Pet Boarder -->
-	<form id="signInPetBoarder" name="signInPetBoarder-form">
-		<h3 id="signInTitle">Pet Boarders: Sign In!</h3>
-		<p id="signIn">Email Address:</p>
-		<label for="signInPetBoarder"></label> <input id="emailPetBoarder" type="text">
-		<br><br>
-		<p id="signIn">Password:</p>
-		<label for="signInPetBoarder"></label> <input id="passwordPetBoarder" type="text">
-		<br><br>
-		 <input class="btn btn-default" id="signInButton" type="submit" value="Sign In">
-	</form>
-	<!-- Sign-up Form: Pet Owner -->
-	<form id="signUpPetOWner" name="signUpPetOWner-form">
-		<h3 id="signUpTitle">Pet Owners: Sign Up!</h3>
-		<p id="signUp">Email Address:</p>
-		<label for="signUpPetOWner"></label> <input id="emailPetOwner" type="text">
-		<br><br>
-		<p id="signUp">Password:</p>
-		<label for="signInPetBoarder"></label> <input id="passwordPetOwner" type="text">
-		<br><br>
-		<input class="btn btn-default" id="signInButton" type="submit" value="Sign Up">
-	</form>
-	<!-- Sign-up Form: Pet Boarder -->
-	<form id="signUpPetBoarder" name="signUpPetBoarder-form">
-		<h3 id="signUpTitle">Pet Boarders: Sign Up!</h3>
-		<p id="signUp">Email Address:</p>
-		<label for="signUpPetBoarder"></label> <input id="emailPetBoarder" type="text">
-		<p id="signUp">Password:</p>
-		<label for="signInPetBoarder"></label> <input id="passwordPetBoarder" type="text">
-		<br><br>
-		<input class="btn btn-default" id="signInButton" type="submit" value="Sign Up">
-	</form>
-	<!-- END SIGN IN/UP FORMS ======================================================= -->
+    <meta charset="UTF-8">
+    <title>Sign-Up Today!</title>
 
-<!-- Map for the User after signing in... Should we use another HTML page? -->
-<div id="googleMap" style="width:100%;height:400px;"></div>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-	<!-- Javascript Container Link -->
-<script src="assets/js/main.js" type="text/javascript">
-</script>
+    <!-- LINK TO FIREBASE-->
+    <script src="https://www.gstatic.com/firebasejs/live/3.0/firebase.js"></script>
 
-</body>
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="assets/css/style_home.css">
+
+    <!-- Link to jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+  </head>
+
+  <body id="home-page">
+    <div>
+      <center><img id="home-logo" src="assets/pictures/BigLogo.jpg"/></center>
+    </div>
+    <div id="home-buttons">
+      <a href="owner1.html"><img src="assets/pictures/Owner_Button.png"></a>
+      <a href="setter1.html"><img src="assets/pictures/Setter_Button.png"></a>
+    </div>
+
+
+  </body>
+
 </html>

@@ -5,11 +5,9 @@ body {
 font-family: 'Rubik', sans-serif;
 }
 
-h3 {font-family: 'Rubik', sans-serif;
+h4 {font-family: 'Rubik', sans-serif;
 }
 
-p {font-family: 'Rubik', sans-serif;
-}
 
 #headpic {
   width: 150px;
@@ -22,6 +20,10 @@ p {font-family: 'Rubik', sans-serif;
     color: #fff;
     padding: 0px;
     box-shadow: 5px 0px 40px rgba(0,0,0, .6);
+
+}
+
+.well-text {
 
 }
 
@@ -61,35 +63,19 @@ button#owner-button, button#setter-button {
   width: 200px;
 }
 
-/*-------------------------------------------Setter 1------------------------------------*/
-
-
-
-/*--------------------------------------------Setter End---------------------------------*/
-
-
-/*------------------------------------------------Owner 1--------------------------------*/
-
-
-/*-----------------------------------------------Owner 2---------------------------------*/
-img {
-  /*width: 100px;*/
-  height: auto;
-  padding-right: 10px;
-}
 
 #name {
   font-style: bold;
 }
 
 #full-setter-list {
-  width: 390px;
+  /*width: 900px;*/
   height: 410px;
   overflow-y: scroll;
 }
 
 img#mappic {
-    width: 730px;
+    width: 557px;
 }
 
 #map {

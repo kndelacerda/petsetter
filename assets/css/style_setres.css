@@ -5,11 +5,10 @@ body {
 font-family: 'Rubik', sans-serif;
 }
 
-h3 {font-family: 'Rubik', sans-serif;
+h4 {font-family: 'Rubik', sans-serif;
 }
 
-p {font-family: 'Rubik', sans-serif;
-}
+
 
 #headpic {
   width: 150px;
@@ -73,7 +72,6 @@ button#owner-button, button#setter-button {
 
 /*-----------------------------------------------Owner 2---------------------------------*/
 img {
-  /*width: 100px;*/
   height: auto;
   padding-right: 10px;
 }
