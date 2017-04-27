@@ -75,7 +75,6 @@ dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functio
   $("#years-display").html(snapshot.val().years);
   $("#bio-display").html(snapshot.val().bio);
 });
-<<<<<<< HEAD
 
 
 
@@ -106,5 +105,3 @@ dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functio
           }
         });
       }
-=======
->>>>>>> origin/master
