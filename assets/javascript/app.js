@@ -82,7 +82,7 @@ dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functio
      function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 12,
-          center: {lat: 29.7604, lng: -95.3698}
+          center: {lat: 29.729284, lng: -95.548295}
         });
         var geocoder = new google.maps.Geocoder();
 
